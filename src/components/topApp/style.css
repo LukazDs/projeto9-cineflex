@@ -1,5 +1,35 @@
 .top-app {
     width: 375px;
     height: 67px;
-    background: red;
+    background: #C3CFD9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 40px;
+    text-align: center;
+
+    color: #E8833A;
+}
+
+.text-header {
+    width: 374px;
+    height: 110px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #293845;
 }
