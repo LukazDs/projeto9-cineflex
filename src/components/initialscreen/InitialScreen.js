@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 
 function Film({ posterURL }) {
     return (
-        <Link to={"/tt"}>
+        <Link to={"/sessao"}>
             <div className="film">
                 <img src={posterURL} />
             </div>

@@ -1,0 +1,56 @@
+.second-screen {
+    width: 375px;
+    height: 667px;
+}
+
+.weekday {
+    width: 375px;
+    height: 490px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.day {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 0.02em;
+
+    color: #293845;
+    margin: 24px;
+}
+
+.time-list {
+    display: flex;
+
+}
+
+.time-list>div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 83px;
+    height: 43px;
+    margin-right: 20px;
+    margin-top: 22px;
+    background: #E8833A;
+    border-radius: 3px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: #FFFFFF;
+}
