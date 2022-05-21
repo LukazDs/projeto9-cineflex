@@ -1,0 +1,55 @@
+.fourth-screen {
+    width: 375px;
+    height: 853px;
+}
+
+.conteiner-end-inf {
+    width: 375px;
+    height: 490px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.packet-inf {
+
+    height: 110px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+
+    letter-spacing: 0.04em;
+
+    color: #293845;
+}
+
+.return {
+    width: 225px;
+    height: 42px;
+    margin: 0 auto;
+    margin-top: 82px;
+    background: #E8833A;
+    border-radius: 3px;
+}
+
+.return>span {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+}

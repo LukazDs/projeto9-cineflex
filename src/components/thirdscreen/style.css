@@ -1,0 +1,131 @@
+.third-screen {
+    width: 375px;
+    height: 853px;
+}
+
+.conteiner-inf {
+    width: 375px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.places {
+    width: 328px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.button-place {
+    width: 26px;
+    height: 26px;
+    margin: 6px 2px;
+    background: #C3CFD9;
+    border: 1px solid #808F9D;
+    border-radius: 12px;
+    cursor: pointer;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 13px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #000000;
+}
+
+.legends {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 328px;
+}
+
+.legend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.button-legend {
+    width: 25px;
+    height: 25px;
+
+    background: #8DD7CF;
+    border: 1px solid #1AAE9E;
+    border-radius: 17px;
+}
+
+.text-legend {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.013em;
+
+    color: #4E5A65;
+}
+
+.forms {
+    margin-top: 42px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 328px;
+
+}
+
+form>label {
+    width: 327px;
+    height: 25px;
+
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+
+    color: #293845;
+}
+
+form>input {
+    width: 327px;
+    height: 51px;
+
+
+    background: #FFFFFF;
+    border: 1px solid #D5D5D5;
+    border-radius: 3px;
+}
+
+form>button {
+  
+    margin: 0 auto;
+    margin-top: 42px;
+    width: 225px;
+    height: 42px;
+
+    background: #E8833A;
+    border-radius: 3px;
+}

@@ -1,6 +1,6 @@
 .second-screen {
     width: 375px;
-    height: 667px;
+    height: 853px;
 }
 
 .weekday {
@@ -29,10 +29,9 @@
 
 .time-list {
     display: flex;
-
 }
 
-.time-list>div {
+.button-hour {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -43,6 +42,10 @@
     margin-top: 22px;
     background: #E8833A;
     border-radius: 3px;
+    
+    
+}
+.button-hour > span {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
@@ -53,4 +56,5 @@
     letter-spacing: 0.02em;
 
     color: #FFFFFF;
+
 }
