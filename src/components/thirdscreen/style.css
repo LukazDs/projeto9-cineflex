@@ -70,7 +70,7 @@
 }
 
 .desavaliable {
-    background: #FBE192; 
+    background: #FBE192;
     border-color: #F7C52B;
 }
 
@@ -141,7 +141,29 @@ form>button {
     margin-top: 42px;
     width: 225px;
     height: 42px;
-
+    cursor: pointer;
     background: #E8833A;
     border-radius: 3px;
+    width: 225px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: #FFFFFF;
+}
+
+
+.group-blocked {
+    display: none;
 }

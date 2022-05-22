@@ -6,7 +6,11 @@ export default function Footer({ posterUrl, title, day, hour }) {
             <img src={posterUrl} />
             <div className="text-inf">
                 <span>{title}</span>
-                <span>{day} {hour}</span>
+                <div className="group-date">
+                    <span>{day} - </span>
+                    <span>{hour}</span>
+                </div>
+
             </div>
         </div>
     )

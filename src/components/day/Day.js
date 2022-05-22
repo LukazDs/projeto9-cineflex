@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-export default function Day({ weekday, hourlist }) {
+export default function Day({ weekday, hourlist, dateFilm }) {
 
     function ButtonHour({ name }) {
         return (
@@ -11,7 +11,7 @@ export default function Day({ weekday, hourlist }) {
     }
 
     function TimeList({ hourlist }) {
-        
+
         return (
             <div className="time-list">
                 {hourlist.map((value) =>
@@ -26,7 +26,11 @@ export default function Day({ weekday, hourlist }) {
 
     return (
         <div className="day">
-            <h2>{weekday}</h2>
+            <div className="day-inf">
+                <h2>{weekday} - </h2>
+                <span>{dateFilm}</span>
+            </div>
+
             <TimeList hourlist={hourlist} />
 
         </div>

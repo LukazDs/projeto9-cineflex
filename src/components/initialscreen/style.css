@@ -1,11 +1,11 @@
 .initial-screen {
     width: 375px;
-    height: 667px;
+    height: 853px;
 }
 
 .container-films {
     width: 375px;
-    height: 490px;
+    height: 600px;
     overflow-y: scroll;
     display: flex;
     flex-direction: row;

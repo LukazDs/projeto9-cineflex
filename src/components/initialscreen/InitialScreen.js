@@ -40,7 +40,7 @@ export default function InitialScreen() {
 
     return (
         <div className="initial-screen">
-            <TopApp selectName={"filme"} />
+            <TopApp selectName={"Selecione o filme"} />
             <div className="container-films">
                 <Films />
             </div>

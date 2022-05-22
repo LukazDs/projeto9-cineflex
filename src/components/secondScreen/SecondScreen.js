@@ -20,20 +20,19 @@ export default function SecondScreen() {
             setObjectDay(response.data.days); 
             setImgFooter(response.data.posterURL);
             setTitleFooter(response.data.title);
-            console.log(response.data);
             })
     }, [])
 
     function WeekDay() {
         return (
-            objectDay.map((value) => <Day weekday={value.weekday} hourlist={value.showtimes} key={value.id}/>)
+            objectDay.map((value) => <Day dateFilm={value.date} weekday={value.weekday} hourlist={value.showtimes} key={value.id}/>)
         )
     }
 
     return (
 
         <div className="second-screen">
-            <TopApp selectName={"horário"} />
+            <TopApp selectName={"Selecione o horário"} />
             <div className="conteiner-times">
                 <WeekDay />
             </div>

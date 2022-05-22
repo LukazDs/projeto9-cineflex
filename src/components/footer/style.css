@@ -22,8 +22,8 @@
     flex-direction: column;
 }
 
-.text-inf>span {
-    width: 169px;
+.text-inf>span, .group-date {
+    
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
