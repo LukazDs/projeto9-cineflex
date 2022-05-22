@@ -64,6 +64,22 @@
     border-radius: 17px;
 }
 
+.avaliable {
+    background: #C3CFD9;
+    border-color: #7B8B99;
+}
+
+.desavaliable {
+    background: #FBE192; 
+    border-color: #F7C52B;
+}
+
+.clicked {
+    border: 1px solid #1AAE9E;
+    background: #8DD7CF;
+}
+
+
 .text-legend {
     font-family: 'Roboto';
     font-style: normal;
@@ -120,7 +136,7 @@ form>input {
 }
 
 form>button {
-  
+
     margin: 0 auto;
     margin-top: 42px;
     width: 225px;

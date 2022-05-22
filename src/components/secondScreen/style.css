@@ -3,14 +3,14 @@
     height: 853px;
 }
 
-.weekday {
+.conteiner-times {
     width: 375px;
     height: 490px;
     overflow-y: scroll;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
+  
 }
 
 .day {

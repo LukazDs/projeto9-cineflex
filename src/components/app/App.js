@@ -6,13 +6,14 @@ import FourthScreen from "../fourthscreen/FourthScreen";
 import "./style.css";
 
 export default function App() {
+    
     return (
         <div className="app">
             <BrowserRouter>
                 <Routes>
                     <Route path={"/"} element={<InitialScreen />}></Route>
-                    <Route path={"/sessao"} element={<SecondScreen />}></Route>
-                    <Route path={"/place"} element={<ThirdScreen />}></Route>
+                    <Route path={"/film/:ID_DO_FILME"} element={<SecondScreen />}></Route>
+                    <Route path={"/sessao/:ID_DA_SESSAO"} element={<ThirdScreen />}></Route>
                     <Route path={"/confirm"} element={<FourthScreen />}></Route>
                 </Routes>
             </BrowserRouter>

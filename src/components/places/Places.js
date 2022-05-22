@@ -1,12 +1,22 @@
-import getPlaces from "../../data/places";
+import { useState } from "react"
 
-export default function Places() {
-    const seats = getPlaces().seats
+export default function Places({ places }) {
+    const seats = places
+  
+
+    function PlaceAvailable({ name }) {
+        const [click, setClick] = useState(false)
+        return (
+            <div onClick={() => setClick(true)} className={`button-place avaliable ${click ? "clicked" : ""}`}>{name}</div>
+        )
+    }
+    
     return (
-        
+
         <div className="places">
-            {seats.map(value => 
-                <div className="button-place">{value.name}</div>
+            {seats.map(value =>
+                (value.isAvailable) ? <PlaceAvailable name={value.name}/> :
+                    <div className="button-place desavaliable">{value.name}</div>
             )}
         </div>
     )
