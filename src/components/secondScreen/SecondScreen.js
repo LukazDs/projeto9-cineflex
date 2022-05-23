@@ -25,7 +25,7 @@ export default function SecondScreen() {
 
     function WeekDay() {
         return (
-            objectDay.map((value) => <Day dateFilm={value.date} weekday={value.weekday} hourlist={value.showtimes} key={value.id}/>)
+            objectDay.map((value, index) => <Day dateFilm={value.date} weekday={value.weekday} hourlist={value.showtimes} key={index}/>)
         )
     }
 

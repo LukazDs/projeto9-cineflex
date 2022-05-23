@@ -4,12 +4,12 @@ import "./style.css"
 import Places from "../places/Places";
 import { useEffect, useState } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
-import FourthScreen from "../fourthscreen/FourthScreen";
+import { useParams, useNavigate } from "react-router-dom";
 
 export default function ThirdScreen() {
 
     const { ID_DA_SESSAO } = useParams()
+    const navigate = useNavigate()
     const [places, setPlaces] = useState([])
     const [imgFooter, setImgFooter] = useState("")
     const [titleFooter, setTitleFooter] = useState("")
@@ -25,6 +25,7 @@ export default function ThirdScreen() {
         if (CheckDate()) {
             axios.post("https://mock-api.driven.com.br/api/v5/cineflex/seats/book-many", { name: userName, cpf: userCPF, ids: listPlaces })
             setChangeScene(true)
+            navigate("/sucesso", {replace: true, state: {list: listSelect, cpf: userCPF, name: userName, title: titleFooter, hour: hourName, day: dateDay}})
         }
 
     }
@@ -53,15 +54,14 @@ export default function ThirdScreen() {
 
     return (
         <>
-            {changeScene ? <FourthScreen listSelect={listSelect} cpf={userCPF} name={userName} title={titleFooter} hour={hourName} day={dateDay}/> : <div></div>}
             <div className={!changeScene ? "third-screen" : "group-blocked"}>
                 <TopApp selectName={"Selecione o(s) assento(s)"} />
                 <div className="conteiner-inf">
-                    <Places places={places} 
-                    listPlaces={listPlaces} 
-                    setListPlaces={setListPlaces} 
-                    listSelect={listSelect} 
-                    setListSelect={setListSelect}
+                    <Places places={places}
+                        listPlaces={listPlaces}
+                        setListPlaces={setListPlaces}
+                        listSelect={listSelect}
+                        setListSelect={setListSelect}
                     />
 
                     <div className="legends">

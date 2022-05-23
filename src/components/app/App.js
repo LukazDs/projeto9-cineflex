@@ -15,7 +15,7 @@ export default function App() {
                     <Route path={"/"} element={<InitialScreen />}></Route>
                     <Route path={"/film/:ID_DO_FILME"} element={<SecondScreen />}></Route>
                     <Route path={"/sessao/:ID_DA_SESSAO"} element={<ThirdScreen />}></Route>
-                    <Route path={"/sessao/sucesso"} element={<FourthScreen/>}></Route>
+                    <Route path={"/sucesso"} element={<FourthScreen/>}></Route>
                 </Routes>
             </BrowserRouter>
         </div>

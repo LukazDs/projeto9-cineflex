@@ -19,9 +19,9 @@ export default function Places({ places, setListPlaces, listPlaces, listSelect, 
     return (
 
         <div className="places">
-            {seats.map(value =>
-                (value.isAvailable) ? <PlaceAvailable listPlaces={listPlaces} listSelect={listSelect} setListSelect={setListSelect} setListPlaces={setListPlaces} id={value.id} name={value.name} /> :
-                    <div onClick={() => alert("Esse assento não está disponível")} className="button-place desavaliable">{value.name}</div>
+            {seats.map((value, index) =>
+                (value.isAvailable) ? <PlaceAvailable  key={index} listPlaces={listPlaces} listSelect={listSelect} setListSelect={setListSelect} setListPlaces={setListPlaces} id={value.id} name={value.name} /> :
+                    <div key={index} onClick={() => alert("Esse assento não está disponível")} className="button-place desavaliable">{value.name}</div>
             )}
         </div>
     )

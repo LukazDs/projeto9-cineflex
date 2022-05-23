@@ -14,9 +14,9 @@ export default function Day({ weekday, hourlist, dateFilm }) {
 
         return (
             <div className="time-list">
-                {hourlist.map((value) =>
-                    <Link to={`/sessao/${value.id}`}>
-                        <ButtonHour name={value.name} key={value.id} />
+                {hourlist.map((value, index) =>
+                    <Link key={index} to={`/sessao/${value.id}`}>
+                        <ButtonHour name={value.name}/>
                     </Link>)}
             </div>
 
